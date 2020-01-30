@@ -6,12 +6,14 @@ import lombok.Data;
  * @author Ian
  */
 @Data
-public class SingletonInner {
+public final class SingletonInner {
     private static class SingletonHolder {
         private static SingletonInner instance = new SingletonInner();
     }
+
     private SingletonInner() {
     }
+
     public static SingletonInner getInstance() {
         return SingletonHolder.instance;
     }

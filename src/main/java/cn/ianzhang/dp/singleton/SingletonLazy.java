@@ -6,12 +6,14 @@ import lombok.Data;
  * @author Ian
  */
 @Data
-public class SingletonLazy {
+public final class SingletonLazy {
     private static SingletonLazy instance;
+
     private SingletonLazy() {
     }
+
     public static synchronized SingletonLazy getInstance() {
-        if(instance == null){
+        if (instance == null) {
             instance = new SingletonLazy();
         }
         return instance;

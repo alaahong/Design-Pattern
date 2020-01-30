@@ -8,5 +8,8 @@ import lombok.ToString;
  */
 @ToString
 public enum SingletonEnum {
-    INSTANCE;
+    /**
+     * INSTANCE
+     */
+    INSTANCE
 }

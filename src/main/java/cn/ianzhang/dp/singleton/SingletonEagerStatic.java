@@ -6,7 +6,7 @@ import lombok.Data;
  * @author Ian
  */
 @Data
-public class SingletonEagerStatic {
+public final class SingletonEagerStatic {
     private static SingletonEagerStatic instance;
 
     static {
